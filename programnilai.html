@@ -1,8 +1,7 @@
 <!--
-    1. Inputan masuk ke Variabel inputan lewat input-type:number (baris 17 dan baris 46)
-    2. Saat submit ditekan (baris 48), f() akan memproses data yang masuk dengan cara menginpor data masuk ke variabel inputan lalu disesuaikan berdasarkan kondisinya masing masing (baris 19 - 36)
+    1. Inputan masuk ke Variabel inputan lewat input-type:number
+    2. Saat submit ditekan, f() akan memproses data yang masuk dengan cara menginpor data masuk ke variabel inputan lalu disesuaikan berdasarkan kondisinya masing masing
     3. Output yang keluar disesuaikan dengan kondisi input yang dimasukkan 
-    
 -->
 
 <!DOCTYPE html>
@@ -12,45 +11,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar membuat program js</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="s.css">
     <script>
         function f() {
             var inputan = document.getElementById("inputmasuk").value;  
+            
             if (inputan > 90) {
                 alert("Anda mendapatkan nilai A");
+                document.getElementById("inputp").innerHTML=("Anda mendapatkan nilai A");
             }
-                 else if (inputan > 80) {
+                else if (inputan > 80) {
                     alert("Anda mendapatkan nilai B");
+                    document.getElementById("inputp").innerHTML=("Anda mendapatkan nilai B");
                     }
                 else if (inputan > 70) {
                     alert("Anda mendapatkan nilai C");
+                    document.getElementById("inputp").innerHTML=("Anda mendapatkan nilai C");
                 }
                 else if (inputan > 60) {
                     alert("Anda mendapatkan nilai D");
+                    document.getElementById("inputp").innerHTML=("Anda mendapatkan nilai D");
                 }
                 else if (inputan > 50) {
                     alert("Anda mendapatkan nilai E");
+                    document.getElementById("inputp").innerHTML=("Anda mendapatkan nilai E");
+                }
+                else if (inputan > 0) {
+                    alert("Maaf, Anda dinyatakan Gagal");
+                    document.getElementById("inputp").innerHTML=("Maaf, Anda dinyatakan Gagal");
                 }
                 else {
-                    alert("Maaf, Anda dinyatakan Gagal");
+                    alert("Harap memasukkan nilai");
                 }
             
-            document.getElementById("inputp").innerHTML=(inputan);
-        }
+            }
     </script>
 </head>
 
 <body>
     <h1>Program Pengelompokan Nilai</h1>
 
-    <form id="form" onsubmit="return false">
-        <input type="number" placeholder="Masukkan Nilai" id="inputmasuk">
-        <input type="submit" onclick="f()">
-    </form>
-
-    <p>
-        Jadi, Nilai yang anda dapatkan adalah: <p id="inputp"></p>
-    </p> 
+    <div class="main">
+        <p>
+            Rentang Nilai <br>
+            A > 90 <br>
+            B > 80 <br>
+            C > 70 <br>
+            D > 60 <br>
+            E > 50 <br>
+            F <= 50 (Gagal) <br>
+        </p>
+    
+        <form id="form" onsubmit="return false">
+            <input type="number" placeholder="Masukkan Nilai" id="inputmasuk">
+            <input type="submit" onclick="f()">
+        </form>
+    
+        <p id="inputp">Masukkan Nilai Anda</p> 
+    </div>
 
 </body>
 

@@ -1,0 +1,70 @@
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: aliceblue;
+    background-image: url("Latar3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue
+}   
+div {
+    background-color: lavender;
+    margin: auto;
+    border-radius: 12px;
+    width: fit-content;
+}
+h1 {
+    margin: 40px ;
+    text-align: center;
+}
+p {
+    border-style: solid;
+    border-width: 10px;
+    border-color: lavender;
+    background-color: lavender;
+    width: 100vh;
+    padding: 10px 10px 10px 25px;
+    margin: auto;
+    line-height: 1.4;
+    border-radius: 20px;
+
+}
+form {
+    width: 35%;
+    margin: 10px auto; 
+    padding: 25px 50px;
+    background-color: lavender;
+    border-radius: 15px;
+}
+input[type=number] {
+    width: 90%;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid white;  
+}
+input[type=submit] {
+    width: 98%;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    color: white;
+    background-color:#b490fc;
+    border: 1px solid #b490fc;
+    border-radius: 5px;   
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #a177f7;
+    border: 1px solid #a177f7;
+}
+
+
+
+
+
