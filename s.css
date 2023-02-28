@@ -1,8 +1,8 @@
 
 
 * {
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     background-image: url("Latar3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color: blue
+    color: #6b3afc;
 }   
 div {
     background-color: lavender;
@@ -27,15 +27,17 @@ p {
     border-width: 10px;
     border-color: lavender;
     background-color: lavender;
-    width: 100vh;
-    padding: 10px 10px 10px 25px;
+    width: 110vh;
+    padding: 15px 20px 15px 35px;
     margin: auto;
     line-height: 1.4;
     border-radius: 20px;
-
+}
+#inputp {
+    padding-bottom: 20px;
 }
 form {
-    width: 35%;
+    width: 60%;
     margin: 10px auto; 
     padding: 25px 50px;
     background-color: lavender;
@@ -49,7 +51,7 @@ input[type=number] {
     border: 1px solid white;  
 }
 input[type=submit] {
-    width: 98%;
+    width: 90%;
     margin-top: 15px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
