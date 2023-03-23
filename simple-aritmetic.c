@@ -2,16 +2,14 @@
 Rumus Bunga
 Bunga = Saldo Terendah * (Suku bunga * Jumlah hari dalam sebulan) / 365 hari
 
-Asumsikan jika suku bunga yang digunakan tidak berubah, bernilai 5%, dan memiliki bunga sebesar 15.000
+Asumsikan jika suku bunga bernilai tetap
 
 */
 
-
 #include <stdio.h>
 
-
 int main( ) {
-    int tabungan_awal, waktu, bunga;
+    int tabungan_awal, bunga;
 
     printf("masukkan nilai tabungan awal dan suku bunga secara berturut-turut\n");
     scanf("%d %d", &tabungan_awal, &bunga);
